@@ -17,7 +17,7 @@ const Todo = () => {
       <input type="text" value={input} onChange={handleChange} autoFocus />{' '}
       <button onClick={handleSubmit}>Add</button>{' '}
       <button onClick={handleDelAll}>Remove All</button>
-      <ul style={{backgroundColor:'white', margin:'0 500px'}}>
+      <ul>
         {todos.map(todo =>{
             return (
             <div key={todo.id} style={{marginTop: '10px'}}>    
